@@ -1,0 +1,1 @@
+I used a deep neural network to classify images from the MNIST dataset, which comprises 28x28 grayscale images of handwritten digits (0-9). 
