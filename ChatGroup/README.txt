@@ -1,0 +1,1 @@
+This is a simple chat group application built in Java using socket programming. The application allows multiple clients to connect to a server and communicate with each other in real time. The chat messages are displayed on a graphical user interface (GUI) for each client.
