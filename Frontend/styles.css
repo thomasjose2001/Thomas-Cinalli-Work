@@ -1,0 +1,459 @@
+/* Thomas Cinalli */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* 16px base font size */
+}
+
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.75rem; /* 60px */
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 1.875rem; /* 30px */
+}
+
+.navigationBarLeft {
+    display: flex;
+    flex: 1;
+}
+
+.logoCircle {
+    height: 2.1875rem; /* 35px */
+    width: 2.1875rem; /* 35px */
+    background-color: rgb(88, 85, 253);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navigationBarCenter {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    gap: 2.5rem; /* 40px */
+}
+
+.navigationLinks {
+    text-decoration: none;
+    color: #5c5a5a;
+    font-size: 0.8125rem; /* 13px */
+}
+
+.navigationBarRight {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5625rem; /* 25px */
+}
+
+.notificationButton {
+    height: 1.25rem; /* 20px */
+    width: 1.25rem; /* 20px */
+    background: url('bell-Icon.jpg');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+.profileCircle {
+    height: 1.875rem; /* 30px */
+    width: 1.875rem; /* 30px */
+    color: rgb(255, 255, 255);
+    background-color: #969191;
+    font-size: 0.8125rem; /* 13px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.secondaryBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.75rem; /* 60px */
+    padding-left: 1.875rem; /* 30px */
+}
+
+.leftGroup {
+    display: flex;
+    align-items: center;
+}
+
+.secondaryBarLeft {
+    display: flex;
+    padding-right: 0.625rem; /* 10px */
+    border-right: 1px solid #e0e0e0;
+    font-size: 0.9375rem; /* 15px */
+    color: #5c5a5a;
+}
+
+.daysLinks {
+    display: flex;
+    text-decoration: none;
+    color: #5c5a5a;
+    font-size: 0.8125rem; /* 13px */
+    padding-left: 0.625rem; /* 10px */
+    gap: 0.9375rem; /* 15px */
+}
+
+.secondaryBarRight {
+    padding-right: 1.875rem; /* 30px */
+}
+
+.newInvoiceButton {
+    padding: 0.5rem 0.6875rem; /* 8px 11px */
+    font-size: 0.75rem; /* 12px */
+    background-color: rgb(88, 85, 253);
+    border-width: 0;
+    color: white;
+    border-radius: 0.375rem; /* 6px */
+    cursor: pointer;
+}
+
+.statsBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.875rem; /* 30px */
+    flex-wrap: wrap;
+}
+
+.statBox1, .statBox2, .statBox3, .statBox4 {
+    flex: 1;
+    min-height: 6.875rem; /* 110px */
+    padding-left: 1.25rem; /* 20px */
+    padding-right: 1.25rem; /* 20px */
+    border: 1px solid #f5f5f5;
+}
+
+.statBox2 {
+    background-image: radial-gradient(at bottom center, #ffe5f6, #ffffff 60%);
+}
+
+.statBox3 {
+    background-image: linear-gradient(to top left, #ffe5f6, #ffffff 45%);
+}
+
+.statBox4 {
+    background-image: radial-gradient(at bottom left, #ffe5f6, #ffffff 50%);
+    border-right: none;
+}
+
+.statBox1 {
+    border-left: none;
+}
+
+.topContainer {
+    display: flex;
+    justify-content: space-between;
+    border-color: 4px solid black;
+}
+
+h1, h2 {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 100;
+    color: #918f8f;
+}
+
+.amount {
+    font-size: 1.5625rem; /* 25px */
+}
+
+.activityMsg {
+    display: flex;
+    justify-content: space-between;
+    color: #3e3e3e;
+    font-size: 0.9375rem; /* 15px */
+    width: 100%;
+    padding-left: 1.25rem; /* 20px */
+    margin-top: 2.5rem; /* 40px */
+    margin-bottom: 2.5rem; /* 40px */
+}
+
+.todayContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.pageDivider {
+    display: flex;
+    background-color: #fafafa;
+    height: 1.875rem; /* 30px */
+    align-items: center;
+    padding-left: 1.25rem; /* 20px */
+    padding-top: 0.3125rem; /* 5px */
+    padding-bottom: 0.3125rem; /* 5px */
+    border-bottom: 1px solid #e1dfdf;
+    border-top: 1px solid #ebe9e9;
+}
+
+.dividerMsg {
+    color: #3e3e3e;
+    font-size: 0.8125rem; /* 13px */
+}
+
+.todayDataContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.dataEntry, .todayDataWithdraw, .todayDataOverdue {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    margin-right: 1.875rem; /* 30px */
+    margin-top: 1.25rem; /* 20px */
+    margin-left: 1.875rem; /* 30px */
+    text-decoration: none;
+    color: #3e3e3e;
+    flex-wrap: wrap;
+    padding-bottom: 0.3125rem; /* 5px */
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.todayDataWithdraw {
+    border-bottom: 1px solid #e1dfdf;
+    padding-bottom: 1.25rem; /* 20px */
+}
+
+.primaryData, .tertiaryData {
+    font-size: 0.875rem; /* 14px */
+    color: #3e3e3e;
+    flex-grow: 1;
+    max-width: 33%;
+    text-align: center;
+}
+
+.secondaryData {
+    font-size: 0.8125rem; /* 13px */
+    color: #3e3e3e;
+    width: 6.25rem; /* 100px */
+    margin-left: 8.125rem; /* 130px */
+}
+
+.primaryData {
+    text-align: left;
+}
+
+.tertiaryData {
+    text-align: right;
+}
+
+h0, .viewAllMsg {
+    font-size: 0.8125rem; /* 13px */
+    color: rgb(88, 85, 253);
+}
+
+.viewAllMsg {
+    margin-right: 3.125rem; /* 50px */
+    cursor: pointer;
+}
+
+.paidButton {
+    background-color: rgb(228, 255, 228);
+    border-width: 1px;
+    border-radius: 0.3125rem; /* 5px */
+    border-color: #ffffff;
+    color: #137a21;
+    padding-left: 0.375rem; /* 6px */
+    padding-right: 0.375rem; /* 6px */
+    padding-top: 0.1875rem; /* 3px */
+    padding-bottom: 0.1875rem; /* 3px */
+}
+
+.withdrawButton {
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-color: #ffffff;
+    border-radius: 0.3125rem; /* 5px */
+    color: #4e4e4e;
+    text-align: center;
+    padding-left: 0.375rem; /* 6px */
+    padding-right: 0.375rem; /* 6px */
+    padding-top: 0.1875rem; /* 3px */
+    padding-bottom: 0.1875rem; /* 3px */
+}
+
+.overdueButton {
+    background-color: rgb(248, 215, 215);
+    font-size: 0.75rem; /* 12px */
+    border-width: 1px;
+    border-radius: 0.3125rem; /* 5px */
+    border-color: #ffffff;
+    color: #c53e3e;
+    text-align: center;
+    padding-left: 0.375rem; /* 6px */
+    padding-right: 0.375rem; /* 6px */
+    padding-top: 0.1875rem; /* 3px */
+    padding-bottom: 0.1875rem; /* 3px */
+}
+
+.subData {
+    margin-top: 0.3125rem; /* 5px */
+    font-size: 0.75rem; /* 12px */
+    color: #969696;
+}
+
+.recentClientsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 1.875rem; /* 30px */
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+.clientEntry {
+    display: flex;
+    flex-direction: column;
+    height: 9.375rem; /* 150px */
+    width: 30%;
+    border: 1px solid #eeeeee;
+    border-radius: 0.625rem; /* 10px */
+}
+
+.topData {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.9375rem; /* 15px */
+    padding-right: 0.9375rem; /* 15px */
+    border-bottom: 1px solid #f9f9f9;
+    background-color: #efefef;
+}
+
+.bottomData {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.clientInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9375rem; /* 15px */
+}
+
+.clientData {
+    display: flex;
+    flex-direction: column;
+}
+
+.clientPicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.3125rem; /* 5px */
+    border-color: #e7e7e7;
+    height: 2.5rem; /* 40px */
+    width: 2.5rem; /* 40px */
+    background-color: #ffffff;
+}
+
+.clientPictureSquare1, .clientPictureSquare2, .clientPictureSquare3 {
+    border: 1px solid black;
+    border-radius: 0.3125rem; /* 5px */
+    height: 1.5625rem; /* 25px */
+    width: 1.5625rem; /* 25px */
+}
+
+.clientPictureSquare1 {
+    background-color: rgb(38, 135, 226);
+    border: 0px;
+    border-radius: 0.4375rem; /* 7px */
+}
+
+.clientPictureSquare2 {
+    background-color: rgb(255, 153, 0);
+    border: 0px;
+    border-radius: 0.4375rem; /* 7px */
+    transform: rotate(60deg);
+}
+
+.clientPictureSquare3 {
+    background-color: rgb(8, 8, 8);
+    border-radius: 0.4375rem; /* 7px */
+}
+
+.bottomDataEntry1, .bottomDataEntry2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem; /* 40px */
+    padding: 0 0.3125rem; /* 5px */
+    box-sizing: border-box;
+}
+
+.bottomDataEntry1 {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+h3, h4, h5, .overdueContainer {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 100;
+    color: #3e3e3e;
+    padding-left: 0.3125rem; /* 5px */
+    padding-right: 0.3125rem; /* 5px */
+}
+
+.overdueContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem; /* 5px */
+}
+
+/* Media query for responsiveness down to 1200px */
+@media (max-width: 75em) { /* 1200px */
+    .navigationBarCenter {
+        gap: 1.25rem; /* 20px */
+    }
+
+    .secondaryBar, .statsBar, .recentClientsContainer {
+        padding-left: 0.9375rem; /* 15px */
+        padding-right: 0.9375rem; /* 15px */
+    }
+
+    .statsBarLeft, .statsBarRight {
+        flex: 1 1 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .statsBarCenter {
+        flex: 1 1 100%;
+        gap: 0.3125rem; /* 5px */
+    }
+
+    .statItem1, .statItem2 {
+        flex: 1 1 100%;
+    }
+
+    .clientEntry {
+        width: 100%;
+        margin-bottom: 1.25rem; /* 20px */
+    }
+
+    .todayDataContainer, .recentClientsContainer {
+        flex-direction: column;
+    }
+
+    .dataEntry {
+        padding-left: 0.9375rem; /* 15px */
+        padding-right: 0.9375rem; /* 15px */
+    }
+
+    .pageDivider {
+        padding-left: 0.9375rem; /* 15px */
+        padding-right: 0.9375rem; /* 15px */
+    }
+}
