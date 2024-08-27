@@ -1,0 +1,1 @@
+This is just a little piece of my property management system. It is a personal project so I kindly prefer not to show all of my code. I did provide images of what the web application looks like in the ViewApp folder. 
