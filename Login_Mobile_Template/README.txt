@@ -1,1 +1,0 @@
-This is a template I like to use when creating a login and create account page. I provided images of the template in the ViewApp folder.
