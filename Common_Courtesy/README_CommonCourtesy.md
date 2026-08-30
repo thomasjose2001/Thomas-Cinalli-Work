@@ -1,6 +1,6 @@
 # Common Courtesy — All Access
 
-An internal dispatch and ride-management platform built for Common Courtesy, a transportation dispatch company. All Access is the admin-facing side of the operation: the tool dispatchers use to look up riders, request and schedule rides, watch a trip in progress on a live map, and manage the details that make a ride actually work for the person taking it.
+An internal dispatch and ride-management platform built for Common Courtesy, a transportation dispatch company. The tool dispatchers use to look up riders, request and schedule rides, watch a trip in progress on a live map, and manage the details that make a ride actually work for the person taking it.
 
 ## Why there's no code here
 
