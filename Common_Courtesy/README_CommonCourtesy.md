@@ -12,7 +12,7 @@ If you're evaluating my work and want to talk through the architecture, the trad
 
 ## Built with
 
-React on the front end.
+React and AWS.
 
 ## Screenshots
 
